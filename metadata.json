@@ -1,0 +1,5 @@
+{
+  "name": "Formulatex",
+  "description": "Convert images of mathematical equations into clean, accurate LaTeX strings.",
+  "requestFramePermissions": []
+}
