@@ -1,10 +1,36 @@
-## Run Locally
+# 🧪 Formulatex
 
-**Prerequisites:**  Node.js
+**Formulatex** es un puente de alta precisión entre la notación matemática analógica (manuscrita o impresa) y la tipografía digital profesional. Utilizando modelos avanzados de IA (Gemini/Vertex AI), la aplicación transforma imágenes estáticas de ecuaciones en código LaTeX limpio, editable y listo para publicar.
 
+🌐 **Despliegue:** [formulatex.vercel.app](https://formulatex.vercel.app/)
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+---
+
+## ✨ Características Principales
+
+* **OCR Matemático con IA:** Potenciado por Gemini para reconocer estructuras complejas, matrices, integrales y símbolos griegos desde fotos o capturas.
+* **Previsualización en Tiempo Real:** Renderizado instantáneo del código LaTeX generado para verificar la precisión.
+* **Interfaz Minimalista:** Diseñada para la máxima productividad, optimizada para flujos de trabajo académicos.
+* **Arquitectura Moderna:** Construido con Vite y TypeScript para una experiencia de usuario ultra rápida.
+
+## 🚀 Tecnologías
+
+* **Frontend:** React + Vite + TypeScript.
+* **IA:** Google Gemini API (Vertex AI).
+* **Despliegue:** Vercel.
+* **Renderizado:** KaTeX / MathJax.
+
+## 🛠️ Instalación y Configuración Local
+
+Si deseas ejecutar Formulatex en tu entorno local, sigue estos pasos:
+
+### Requisitos previos
+* [Node.js](https://nodejs.org/) (v18 o superior)
+* Una clave de API de Google AI Studio / Vertex AI.
+
+### Pasos
+
+1. **Clonar el repositorio:**
+   ```bash
+   git clone [https://github.com/Alfon2705/formulatex.git](https://github.com/Alfon2705/formulatex.git)
+   cd formulatex
