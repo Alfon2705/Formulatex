@@ -1,19 +1,10 @@
 import { useState, useRef, useEffect } from 'react';
-import { GoogleGenerativeAI } from '@google/genai';
+import { GoogleGenAI } from '@google/genai';
 import { Upload, Image as ImageIcon, Copy, Check, Loader2, Trash2 } from 'lucide-react';
 import 'katex/dist/katex.min.css';
 import { BlockMath } from 'react-katex';
 
-// Forzamos a que sea un string y eliminamos posibles espacios invisibles
-const apiKey = (import.meta.env.VITE_GEMINI_API_KEY || "").trim();
-
-if (!apiKey) {
-  console.error("La API Key está vacía o mal configurada en Vercel");
-}
-
-// Inicialización con el nombre de clase correcto
-const genAI = new GoogleGenerativeAI(apiKey);
-const ai = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
 
 export default function App() {
   const [image, setImage] = useState<string | null>(null);
