@@ -4,7 +4,7 @@ import { Upload, Image as ImageIcon, Copy, Check, Loader2, Trash2 } from 'lucide
 import 'katex/dist/katex.min.css';
 import { BlockMath } from 'react-katex';
 
-const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
+const ai = new GoogleGenAI(import.meta.env.VITE_GEMINI_API_KEY);
 
 export default function App() {
   const [image, setImage] = useState<string | null>(null);
