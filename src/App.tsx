@@ -4,8 +4,16 @@ import { Upload, Image as ImageIcon, Copy, Check, Loader2, Trash2 } from 'lucide
 import 'katex/dist/katex.min.css';
 import { BlockMath } from 'react-katex';
 
-console.log("Comprobando API Key:", import.meta.env.VITE_GEMINI_API_KEY ? "Detectada ✅" : "No detectada ❌");
-const ai = new GoogleGenAI(import.meta.env.VITE_GEMINI_API_KEY);
+// Forzamos a que sea un string y eliminamos posibles espacios invisibles
+const apiKey = (import.meta.env.VITE_GEMINI_API_KEY || "").trim();
+
+if (!apiKey) {
+  console.error("La API Key está vacía o mal configurada en Vercel");
+}
+
+// Inicialización con el nombre de clase correcto
+const genAI = new GoogleGenerativeAI(apiKey);
+const ai = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
 export default function App() {
   const [image, setImage] = useState<string | null>(null);
