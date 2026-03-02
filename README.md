@@ -18,7 +18,7 @@
 * **Frontend:** React + Vite + TypeScript.
 * **IA:** Google Gemini API (Vertex AI).
 * **Despliegue:** Vercel.
-* **Renderizado:** KaTeX / MathJax.
+* **Renderizado:** KaTeX.
 
 ## 🛠️ Instalación y Configuración Local
 
