@@ -16,7 +16,7 @@
 ## 🚀 Tecnologías
 
 * **Frontend:** React + Vite + TypeScript.
-* **IA:** Google Gemini API (Vertex AI).
+* **IA:** Google Gemini API.
 * **Despliegue:** Vercel.
 * **Renderizado:** KaTeX.
 
@@ -26,7 +26,7 @@ Si deseas ejecutar Formulatex en tu entorno local, sigue estos pasos:
 
 ### Requisitos previos
 * [Node.js](https://nodejs.org/) (v18 o superior)
-* Una clave de API de Google AI Studio / Vertex AI.
+* Una clave de API de Google AI Studio.
 
 ### Pasos
 
